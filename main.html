@@ -3,65 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Styled Webpage</title>
-<style>
-    :root {
-        background-color: rgb(135, 206, 235); /* Set background color for the entire page */
-    }
-
-    p:first-child {
-        color: white; /* Set text color of the first paragraph */
-        background-color: black; /* Set background color of the first paragraph */
-    }
-
-    p:nth-child(2) {
-        color: black; /* Set text color of the second paragraph */
-    }
-
-    p:last-child {
-        color: red; /* Set text color of the third paragraph */
-    }
-
-    ul {
-        list-style-type: none; /* Remove default list styles */
-        padding: 0;
-    }
-
-    li {
-        width: 50%; /* Set width of list items */
-        padding: 10px; /* Set padding of list items */
-        background-color: gray; /* Set default background color for list items */
-    }
-
-    li:nth-child(odd) {
-        background-color: white; /* Set background color for odd list items */
-    }
-
-    li:first-child,
-    li:last-child {
-        font-size: 22px; /* Set font size for the first and last list items */
-    }
-
-    li:nth-last-child(3) {
-        background-color: pink; /* Set background color for the third-to-last list item */
-    }
-</style>
+<title>Styled Page</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<article>
-    <p>This is the first paragraph.</p>
-    <p>This is the second paragraph.</p>
-    <p>This is the third paragraph.</p>
-</article>
-
-<ul>
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li style="background-color: pink;">Item 3</li>
-    <li>Item 4</li>
-    <li>Item 5</li>
-</ul>
-
+<div class="container">
+    <article>
+        <p>First paragraph: White text on a black background</p>
+        <p>Second paragraph: Standard text color</p>
+        <p>Third paragraph: Red text</p>
+    </article>
+    <ul>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+        <li>Fourth Item</li>
+        <li>Fifth Item</li>
+    </ul>
+</div>
 </body>
 </html>
